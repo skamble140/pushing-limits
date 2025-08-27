@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CrewAI Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>CrewAI Advanced Interface</h1>
+            <p>A sophisticated front-end to interact with your local CrewAI backend.</p>
+        </header>
+
+        <div class="input-section">
+            <textarea id="userInput" placeholder="Enter your detailed prompt here..."></textarea>
+            <button id="runButton">
+                <i class="fas fa-paper-plane"></i> Send
+            </button>
+        </div>
+
+        <div class="output-section">
+            <div class="output-header">
+                <h2>Agent Output</h2>
+                <button id="copyButton" title="Copy to Clipboard">
+                    <i class="far fa-copy"></i>
+                </button>
+            </div>
+            <div id="output" class="markdown-body">
+                <span class="placeholder">Your agent's response will appear here...</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
